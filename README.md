@@ -5,7 +5,7 @@ pip install numpy
 pip install matplotlib
 pip install tensorflow
 pip install keras
-pip install 
+pip install aiogram
 
 folder description
 
