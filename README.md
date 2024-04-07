@@ -15,3 +15,5 @@ data_images - sorted spectrogram dataset for training and validation
 extras - additional dataset not included in the main one
 testimg - spectrograms are saved for processing
 voice - audio is saved for processing
+
+python version = 3.11.9
