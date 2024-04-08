@@ -35,10 +35,10 @@ async def GetAudio(message: Message, state: FSMContext):
     try:
         msg = await message.answer(f"Обрабатывается..") 
         await bot.download(message.voice, destination=f"{path}.ogg")
-        await convert_ogg_to_wav(path)
+        convert_ogg_to_wav(path)
         await message.answer(recognition(f"{path}.wav"), reply_markup=keyboardPanel)
-        await remove(f'{path}.ogg')
-        await remove(f'{path}.wav')
+        remove(f'{path}.ogg')
+        remove(f'{path}.wav')
         await msg.delete()
     except:
         await message.answer("Вы отправили не голосовое сообщение.", reply_markup=keyboardPanel)
